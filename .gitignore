@@ -1,0 +1,15 @@
+# 依赖（不要提交）
+node_modules/
+
+# Cloudflare 本地开发配置与密钥（切勿提交）
+.dev.vars
+.env
+.wrangler/
+
+# 编辑器 / 系统文件
+.idea/
+.vscode/
+.DS_Store
+
+# 注意：wrangler.toml 必须保留在仓库中（已不含任何密钥），
+# 因为 Cloudflare 通过 Git 部署时需要读取其中的 main / compatibility_date 配置。
